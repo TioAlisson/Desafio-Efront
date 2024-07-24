@@ -24,7 +24,7 @@ Este projeto é uma landing page inspirada na plataforma Efront. O objetivo é c
    git clone https://github.com/TioAlisson/Desafio-Efront.git
 
 ## Link do projeto
-1. Link do projeto: 
+1. Link do projeto: https://tioalisson.github.io/Desafio-Efront/
 
 ## Contato
 
