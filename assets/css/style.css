@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-500: #0A0A0A;
+    --white: #FFFFFF;
+    --gray: #AEAEAE;
+    --blue: #899BFF;
+    --red: #FF3E3E;
+    --green: #04D361;
+
+    --font-primary: "Saira";
+    --font-secondary: "Inter";
+
+}
+
+/* RESET */
+button, a { all: unset; display: inline-block; }
+* { padding: 0; margin: 0; box-sizing: border-box; font-family: var(--font-primary); }
+::-webkit-scrollbar {width: 6px}
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);-webkit-border-radius: 10px;border-radius: 10px}
+::-webkit-scrollbar-thumb {-webkit-border-radius: 10px;border-radius: 10px;background: #999;-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5)}
+::-webkit-scrollbar-thumb:window-inactive {background: #999;}
+.form-select:focus { border-color: none; outline: none; box-shadow: none; border: none; }
+
+#bg-main { background-color: var(--primary-500); color: var(--white); width: 100%; }
+
+/* HEADER */
+header { width: 100%;  display: flex; justify-content: space-around; padding-bottom: 100px; }
+header .mt-32 { margin-top: 30px; }
+header a { display: flex; cursor: pointer; }
+header span { color: var(--blue); font-weight: 700; }
+header span, h1 { font-size: 38px; font-weight: 400; }
+header button { font-size: 16px; font-weight: 500; border: 2px solid var(--blue); border-radius: 6px; padding: 20px 30px; cursor: pointer; transition: all ease-in-out 0.6s; }
+header button:hover { background-color: var(--blue); }
+
+/* MAIN */
+main { display: flex; justify-content: center; width: 100%; }
+main h1 { font-size: 48px; font-weight: 600; text-align: center; }
+main h2 { color: var(--blue); font-size: 32px; font-weight: 400; text-align: center; padding: 8px 0px 120px 0px; }
+main p { color: var(--gray); font-family: var(--font-secondary); font-size: 26px; font-weight: 500; margin-bottom: 48px; }
+
+main .inputs { display: flex; flex-direction: column; width: 100%; max-width: 600px; }
+main label { color: var(--gray); font-family: var(--font-secondary); font-size: 18px; line-height: 22px; margin: 12px 0px; }
+main input { color: var(--white); background-color: var(--primary-500); border: 1px solid var(--blue); font-size: 18px; margin-bottom: 20px; padding: 14px; width: 100%; box-sizing: border-box; }
+main input:focus-visible { outline: none; }
+main button { margin: 40px 0px 160px 0px; width: 100%; box-sizing: border-box; }
+.btn { background-color: #899BFF; color: var(--primary-500); font-family: var(--font-secondary); font-size: 24px; font-weight: 700; border-radius: 4px; padding: 12px; text-align: center; cursor: pointer; width: 100%; max-width: 600px; }
+
+/* FOOTER */
+footer { width: 100%; color: var(--gray); text-align: center; }
+
+/* MODAL */
+.enviar-modal { width: 100%; min-width: 100vw; min-height: 100vh; background-color: #0A0A0A90; }
+.conteudo-modal { width: 800px; height: 300px; border: 1px solid var(--blue); background-color: var(--primary-500); color: var(--white); display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.conteudo-modal p { font-size: 32px; margin-bottom: 48px; }
+.conteudo-modal button { background-color: var(--green); }
+
+/* BUTTONS */
+.sucesso { color: var(--green); }
+.erro { color: var(--red); }
+.bg-sucesso { background-color: var(--green) !important; }
+.bg-erro { background-color: var(--red) !important; } 
+
+/* MEDIA QUERY */
+@media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
+    main h1 { font-size: 38px; }
+    main h2 { font-size: 28px; padding: 4px 0px 60px 0px; margin: 20px; }
+    main p { font-size: 28px; box-sizing: border-box; }
+
+    .conteudo-modal { width: 500px; }
+    .conteudo-modal p { font-size: 28px; }
+    .btn-fechar { width: 50%; font-size: 20px; }
+
+    .center { display: flex; justify-content: center; }
+    .input-button { width: 80%; }
+    .section-conteudo p { margin: 60px; }
+    .break-line { display: none; }
+}
+
+@media only screen and (max-device-width: 480px), screen and (max-width: 480px) {
+    header button { font-size: 14px; padding: 10px 15px;  }
+    header span, h1 { font-size: 28px; }
+    main h1 { font-size: 32px; }
+    main h2 { font-size: 26px; }
+    main p { font-size: 18px; }
+    main label { font-size: 16px; }
+    footer { font-size: 14px; padding: 20px; }
+    .conteudo-modal { width: 300px; height: 200px; }
+    .conteudo-modal p { font-size: 22px; margin-bottom: 22px; }
+    .btn-fechar { width: 25%; font-size: 16px; }
+
+    .section-conteudo p { margin: 30px; }
+    .btn-enviar { font-size: 20px; }
+}
+
+
+
+
+
